@@ -1,5 +1,7 @@
 FROM ghost:2
 
+EXPOSE 2368
+
 ENV url=https://blog.nathanjgaul.com
 
 ENV database__client=mysql
