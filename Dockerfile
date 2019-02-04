@@ -1,8 +1,11 @@
 FROM ghost:2
 
-EXPOSE 2368
+EXPOSE $PORT
 
 ENV url=https://blog.nathanjgaul.com
+
+ENV server__host=0.0.0.0
+ENV server__port=$PORT
 
 ENV database__client=mysql
 ENV database__connection__host=dokku-mysql-blog-db
